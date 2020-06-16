@@ -3,7 +3,7 @@ import cv2
 
 fire_cascade = cv2.CascadeClassifier('cascade.xml')
 
-img = cv2.imread('fire.jpg')
+img = cv2.imread('videoplayback.mp4')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 fires = fire_cascade.detectMultiScale(gray, 1.3, 5)
